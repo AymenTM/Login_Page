@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #b8b8f3;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.form{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 25rem;
+  width: 25rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: -7px -9px 25px 12px #495f41;
+}
+.forget_pass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+  box-shadow: 0px -1px 7px 0px #232323;
+
+}
+.forget_pass a{
+  text-decoration:none;
+  color: rgba(0,0,50,0.7);
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+.inputs input{
+  text-align: center;
+  height: 2.5rem;
+  width: 20rem;
+  margin: 5px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #f0f6f6;
+}
+.inputs a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 2rem;
+  text-decoration: none;
+  background-color: #129acc;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0px 5px 20px 0px #57E2E5;
+}
+.data h4{
+  font-size: 1.5rem;
+}
+.fragments{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.fragments .fragment{
+  display: flex;
+  justify-content: center;
+}
+.fragments .fragment a{
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-size: 1.5rem;
+
+
+}
+.fragments .fragment a::after{
+  border-top: .1rem solid;
+  border-color: dodgerblue;
+  border-width: medium;
+  position: absolute;
+  width: 0%;
+  content: "";
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.fragments .fragment a:hover::after{
+  right: 0;
+  width: 100%;
+}
+.fragments .fragment a:default::after{
+  right: 0;
+  width: 100%;
+}
